@@ -1,0 +1,41 @@
+.aboutFlex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 45px;
+}
+
+.iconsFlex {
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+i {
+  font-size: 50px;
+}
+
+.projectsFlex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project1Flex {
+display: flex;
+}
+
+.project2Flex {
+display: flex;
+}
+
+.project3Flex {
+display: flex;
+}

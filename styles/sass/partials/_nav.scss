@@ -1,0 +1,28 @@
+nav {
+  line-height: 29px;
+  letter-spacing: 1px;
+  background-color: #fecacc;
+//   background-color: lightcoral;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  li {
+    padding: 0rem 1rem;
+    
+    a {
+      color: black;
+
+      &:hover,
+      &:focus {
+        color: white;
+      }
+    }
+  }
+}
