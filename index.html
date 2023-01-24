@@ -4,60 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/sass/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- NAV START -->
-    <nav class="navBar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- NAV END -->
+    <div class="headerImage">
+      <nav class="navBar">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">PROJECT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- NAV END -->
 
-    <div class="headerFlex">
       <header>
-        <h1>-----name-----</h1>
-        <h2>Toronto Based Web Developer</h2>
-        <button>get in touch</button>
-      </header>
-    </div>
+        <div class="headerFlex">
+            <div class="wrapper">
+            <h1>Bea Tuano</h1>
+            <h2>Toronto Based Web Developer</h2>
+            <button>get in touch</button>
+          </div>
+        </header>
+      </div>
 
-    <div class="wrapper">
       <main>
         <section>
           <div class="aboutFlex">
             <h2>about me</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates expedita impedit itaque et est similique possimus,
-              sequi voluptas nisi alias nostrum placeat, maiores laborum eos
-              quisquam unde natus. Consequuntur, ea.
-            </p>
-            <img src="https://placebear.com/200/200" />
-          </div>
+            <div class="aboutText">
+              <p>/bay-yuh twah-noh/</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates expedita impedit itaque et est similique possimus,
+                sequi voluptas nisi alias nostrum placeat, maiores laborum eos
+                quisquam unde natus. Consequuntur, ea.
+              </p>
+              <img src="https://placebear.com/200/200" />
+            </div>
         </section>
+      </div>
 
         <section>
           <div class="skillsFlex">
             <h2>skills</h2>
-            <div class="iconsFlex">
-              <i class="devicon-html5-plain"></i>
-              <i class="devicon-css3-plain"></i>
-              <i class="devicon-sass-original"></i>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-react-original"></i>
-              <i class="devicon-github-original"></i>
-              <i class="devicon-firebase-plain"></i>
-            </div>
+            <ul class="skillsIcons">
+              <li>
+                <img src="./assets/html5-logo-svgrepo-com.svg" alt="" />
+                <p>HTML5</p>
+              </li>
+              <li>
+                <img src="./assets/css3-svgrepo-com.svg" alt="" />
+                <p>CSS3</p>
+              </li>
+              <li>
+                <img src="./assets/sass-svgrepo-com.svg" alt="" />
+                <p>Sass</p>
+              </li>
+              <li>
+                <img src="./assets/javascript-svgrepo-com.svg" alt="" />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <img src="./assets/react-svgrepo-com.svg" alt="" />
+                <p>React</p>
+              </li>
+              <li>
+                <img src="./assets/rest-api-svgrepo-com.svg" alt="" />
+                <p>Rest API</p>
+              </li>
+              <li>
+                <img src="./assets/firebase-svgrepo-com.svg" alt="" />
+                <p>Firebase</p>
+              </li>
+              <li>
+                <img src="./assets/terminal-svgrepo-com.svg" alt="" />
+                <p>Terminal</p>
+              </li>
+              <li>
+                <img src="./assets/responsive-svgrepo-com.svg" alt="" />
+                <p>Responsive Design</p>
+              </li>
+              <li>
+                <img src="./assets//accessibility-svgrepo-com.svg" alt="" />
+                <p>Accessibility</p>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -66,14 +106,12 @@
             <h2>projects</h2>
 
             <div class="project1Flex">
-              <div><img src="https://placebear.com/200/200" /></div>
+              <div><img src="./assets/pokegenerator.gif" /></div>
               <div class="projectText1">
-                <h3>project title here</h3>
+                <h3>Pokegenerator</h3>
                 <h4>HTML, CSS, JAVASCRIPT</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                  dolorum minus velit ducimus odit commodi. Molestiae, tempore
-                  nostrum! Vel, tempora.
+                  In collaboration with Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta enim dignissimos id ipsam iusto cumque molestiae!
                 </p>
                 <button>view live</button>
                 <button>view code</button>
@@ -112,35 +150,37 @@
 
         <section>
           <div class="contact">
-          
-          <h2>get in touch</h2>
-          <p>icon placeholder</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            alias vero eligendi fugiat consequuntur. Ea qui fugit veniam
-            pariatur eos.
-          </p>
-          <form action="#" class="login-form" name="login-form">
-            <label for="name">Name</label>
-            <input id="name" type="text" />
-            <label for="email">Email</label>
-            <input id="email" type="text" />
+            <h2>get in touch</h2>
+            <div class="contactIcons">
+              <i class="devicon-linkedin-plain"></i>
+              <i class="devicon-github-original"></i>
+            </div>
+            <p class="contactText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              alias vero eligendi fugiat consequuntur. Ea qui fugit veniam
+              pariatur eos.
+            </p>
+            <form action="#" class="login-form" name="login-form">
+              <label for="name">Name</label>
+              <input id="name" type="text" />
+              <label for="email">Email</label>
+              <input id="email" type="text" />
 
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="60"
-              rows="10"
-            ></textarea>
-            <button type="submit">submit</button>
-          </form>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="60"
+                rows="10"
+              ></textarea>
+              <button type="submit">submit</button>
+            </form>
           </div>
         </section>
       </main>
     </div>
-    <footer>
-      <p>developed by Bea</p>
-    </footer>
   </body>
+  <footer>
+    <p>developed by Bea</p>
+  </footer>
 </html>

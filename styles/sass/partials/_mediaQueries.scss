@@ -1,0 +1,11 @@
+// For form make width 100% on the form tag
+
+// test wrapper to be 95% for mobile
+
+
+
+@media (max-width: 450px) {
+    .placesFlex {
+        display: none;
+    }
+}

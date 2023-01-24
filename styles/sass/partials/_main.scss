@@ -5,37 +5,91 @@
   align-items: center;
 }
 
+.aboutText {
+  width: 70%;
+  text-align: center;
+}
+
 .skillsFlex {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 45px;
+
+  h2 {
+    margin: 30px auto 0;
+  }
 }
 
-.iconsFlex {
-  width: 900px;
+.skillsIcons {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 6% auto;
+  justify-content: center;
+
+  li {
+    flex-basis: 25%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      color: coral;
+      transition: all 0.4s;
+
+      // p {
+      //   color: black;
+
+      //   &:hover{
+
+      //     opacity: 0;
+      //     color: #545629;
+      //     transition: all 0.4s;
+      //   }
+    }
+  }
+  img {
+    width: 3rem;
+  }
 }
 
-i {
-  font-size: 50px;
-}
-
-.projectsFlex{
+.projectsFlex {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .project1Flex {
-display: flex;
+  display: flex;
+  width: 90%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .projectText1 {
+    margin-left: 30px;
+  }
 }
 
 .project2Flex {
-display: flex;
+  display: flex;
+  width: 70%;
+
+  .projectText2 {
+    margin-right: 50px;
+  }
 }
 
 .project3Flex {
-display: flex;
+  display: flex;
+  width: 70%;
+  .projectText3 {
+    margin-left: 50px;
+  }
+}
+
+.contactText {
+  width: 70%;
 }
