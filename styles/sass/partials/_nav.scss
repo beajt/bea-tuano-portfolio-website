@@ -1,7 +1,6 @@
 nav {
   line-height: 29px;
   letter-spacing: 1px;
-  //   background-color: lightcoral;
 
   ul {
     display: flex;
@@ -17,17 +16,13 @@ nav {
     padding: 0rem 1rem;
 
     a {
-  color: white;
+      color: black;
 
-color: black;
-
-&:hover,
-&:focus {
-  color: white;
-}
-
+      &:hover,
+      &:focus {
+        color: white;
+        transition: all 0.2s;
+      }
     }
   }
 }
-
-

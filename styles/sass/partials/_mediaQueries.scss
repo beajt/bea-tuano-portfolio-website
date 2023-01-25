@@ -2,10 +2,151 @@
 
 // test wrapper to be 95% for mobile
 
-
-
 @media (max-width: 450px) {
-    .placesFlex {
-        display: none;
+  .wrapper {
+    width: 95%;
+  }
+
+  //Hamburger menu from project 1, from Haley
+
+  .navBar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  .navFlex {
+    display: flex;
+    justify-content: right;
+  }
+
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px);
+    rotate: (45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px);
+    rotate: (-45deg);
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navItem {
+    margin: 16px 0;
+  }
+
+  .navMenu.active {
+    left: 0;
+  }
+
+  .navLink {
+    transition: 0.7s ease;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  nav li {
+    padding: 0rem 0.25rem;
+  }
+
+  // SKILLS
+
+  .skillsBox {
+    width: 90%;
+
+    .skillsIcons {
+      width: 100%;
     }
+  }
+
+  // PROJECTS
+
+  .project1Flex {
+    display: flex;
+    flex-direction: column;
+
+    .projectText1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .pokegenerator {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .project2Flex {
+    display: flex;
+    flex-direction: column;
+
+    .projectText2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-right: 0;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  .project3Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projectText3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  // CONTACT MEDIA QUERIES
+
+  .loginForm,
+  text-area {
+    width: 80%;
+  }
 }

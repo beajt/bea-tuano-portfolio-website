@@ -26,7 +26,7 @@
   justify-content: center;
 
   li {
-    flex-basis: 25%;
+    flex-basis: 17%;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -34,18 +34,8 @@
     align-items: center;
 
     &:hover {
-      color: coral;
-      transition: all 0.4s;
-
-      // p {
-      //   color: black;
-
-      //   &:hover{
-
-      //     opacity: 0;
-      //     color: #545629;
-      //     transition: all 0.4s;
-      //   }
+      color: #f4a09c;
+      transition: all 0.2s;
     }
   }
   img {
@@ -57,39 +47,75 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h2 {
+    padding-bottom: 30px;
+  }
 }
 
 .project1Flex {
   display: flex;
-  width: 90%;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  width: 80%;
+  margin-bottom: 50px;
 
   .projectText1 {
-    margin-left: 30px;
+    width: 60%;
   }
+
+    .pokegenerator {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 90%;
+    }
+
 }
 
 .project2Flex {
   display: flex;
-  width: 70%;
+  width: 80%;
+  margin-bottom: 50px;
 
   .projectText2 {
     margin-right: 50px;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .projectText2 {
+    width: 60%;
   }
 }
 
 .project3Flex {
   display: flex;
-  width: 70%;
+  width: 80%;
+  margin-bottom: 50px;
+
   .projectText3 {
     margin-left: 50px;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .projectText3 {
+    width: 60%;
   }
 }
 
 .contactText {
   width: 70%;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+
 }
