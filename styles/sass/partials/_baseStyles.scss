@@ -1,19 +1,5 @@
-h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-
-h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-
-ul {
-  font-weight: 700;
+html {
+  font-size: 125%;
 }
 
 .wrapper {
@@ -22,51 +8,75 @@ ul {
   max-width: 1080px;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+    color: #212427;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+
+}
+
+ul {
+  font-weight: 700;
+}
+
+
 li {
   list-style: none;
 }
 
+p {
+  text-align: justify;
+}
+
 a {
   text-decoration: none;
+  color: black;
 }
 
-// button from get CSS Scan
+.button {
+  --button: hsl(0, 100%, 90%);
+  --button-hover: hsl(0, 100%, 94%);
+  --button-active:  hsl(0, 100%, 84%);
+  --button-visited: hsl(0, 100%, 94%);
+  --button-colour: var(--colour-black);
+   --button-border: var(--colour-black);
+}
 
-.buttonStyle {
-  --b: 3px; /* border thickness */
-  --s: 0.45em; /* size of the corner */
-  --color: #373b44;
 
-  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background: conic-gradient(
-      from 90deg at var(--b) var(--b),
-      #0000 90deg,
-      var(--color) 0
-    )
-    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
-    calc(100% - var(--b) - 2 * var(--_p));
-  transition: 0.3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: 0.6em;
+.button {
+  padding: .9rem 1.7rem;
+  color: var(--button-colour);
+  font-weight: 500;
   font-size: 16px;
-
-  border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  transition: all 0.3s ease-in-out;
+  background: var(--button);
+  border: solid 1px;
+  box-shadow: inset 0 0 0 2px var(--colour-white);
+  margin-right: 1em;
 }
 
-.buttonStyle:hover,
-.buttonStyle:focus-visible {
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: 0.05em;
+.button:hover {
+  text-decoration: underline;
+  background: var(--button-hover);
+  box-shadow: inset 0 0 0 4px var(--colour-white);
 }
 
-.buttonStyle:active {
-  background: var(--color);
-  color: #fff;
+.button:active {
+  background: var(--button-active);
+}
+
+.button:visited {
+  background: var(--button-visited);
 }

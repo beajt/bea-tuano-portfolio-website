@@ -3,11 +3,26 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 0 50px;
+  margin: 0 auto;
+
+  .aboutText {
+    display: flex;
+    align-items: center;
+
+    p {
+      padding-left: 30px;
+    }
+
+    img {
+      width: 75%;
+      border-radius: 20px;
+    }
+  }
 }
 
-.aboutText {
-  width: 70%;
-  text-align: center;
+.winterpeg {
+  text-decoration: line-through;
 }
 
 .skillsFlex {
@@ -24,22 +39,34 @@
   flex-wrap: wrap;
   margin: 6% auto;
   justify-content: center;
+  padding: 0;
 
   li {
     flex-basis: 17%;
-    padding: 5px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
     &:hover {
-      color: #f4a09c;
-      transition: all 0.2s;
+      svg {
+        fill: #f4a09c;
+        transition: all 0.2s;
+      }
+      p {
+        color: #f4a09c;
+        transition: all 0.2s;
+      }
     }
-  }
-  img {
-    width: 3rem;
+
+    p {
+      height: 50px;
+      text-align: center;
+    }
+    svg {
+      fill: #212427;
+      width: 3rem;
+    }
   }
 }
 
@@ -51,57 +78,45 @@
   h2 {
     padding-bottom: 30px;
   }
+
+  ul {
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
 }
 
 .project1Flex {
   display: flex;
-  width: 80%;
   margin-bottom: 50px;
+}
 
-  .projectText1 {
-    width: 60%;
-  }
-
-    .pokegenerator {
-      display: flex;
-      justify-content: center;
-    }
-
-    img {
-      width: 90%;
-    }
-
+.pokegenerator {
+  display: flex;
+  align-items: center;
 }
 
 .project2Flex {
   display: flex;
-  width: 80%;
   margin-bottom: 50px;
 
-  .projectText2 {
-    margin-right: 50px;
-  }
-
-  img {
-    width: 90%;
-  }
-
-  .projectText2 {
-    width: 60%;
+  ul {
+    padding: 0;
   }
 }
 
 .project3Flex {
   display: flex;
-  width: 80%;
   margin-bottom: 50px;
 
   .projectText3 {
     margin-left: 50px;
-  }
-
-  img {
-    width: 90%;
+    ul {
+      padding: 0;
+    }
   }
 
   .projectText3 {
@@ -109,13 +124,49 @@
   }
 }
 
-.contactText {
-  width: 70%;
+.w-1\/2 {
+  width: 50%;
 }
 
-.loginForm {
+.projectImages {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 30px;
+}
+
+.contact {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  align-items: center;
 
+  .contactIcons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+
+    a {
+      padding: 5px;
+    }
+  }
+
+  i {
+    color: black;
+  }
+
+  i:hover {
+    color: #f4a09c;
+    transition: all 0.2s;
+  }
+
+  .contactText {
+    text-align: center;
+    padding: 0 40px;
+  }
+}
+
+footer {
+  p {
+    text-align: center;
+  }
 }

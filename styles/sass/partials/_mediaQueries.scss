@@ -77,14 +77,27 @@
     padding: 0rem 0.25rem;
   }
 
+  // HEADER
+
+  .h1Flex {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  // ABOUT
+
+  .aboutFlex {
+    padding: 0;
+  }
+  .aboutText {
+    flex-direction: column;
+  }
+
+
   // SKILLS
 
-  .skillsBox {
-    width: 90%;
-
-    .skillsIcons {
-      width: 100%;
-    }
+  .skillsIcons li {
+    flex-basis: 33%;
   }
 
   // PROJECTS
@@ -98,13 +111,18 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100%;
     }
 
     .pokegenerator {
       display: flex;
       justify-content: center;
+      width: 100%;
     }
+  }
+
+  .w-1\/2 {
+
+    width: 100%
   }
 
   .project2Flex {

@@ -1,6 +1,8 @@
 nav {
   line-height: 29px;
   letter-spacing: 1px;
+  font-size: 0.75rem;
+  background-color: #f4a09c;
 
   ul {
     display: flex;
@@ -8,12 +10,12 @@ nav {
     justify-content: right;
     align-items: center;
     margin: 0;
-    padding: 1rem;
+    padding: 20px;
   }
 
   li {
     color: white;
-    padding: 0rem 1rem;
+    padding: 0 20px;
 
     a {
       color: black;
