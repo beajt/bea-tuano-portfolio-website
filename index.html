@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <script
@@ -18,9 +18,11 @@
     <title>Bea Tuano</title>
   </head>
   <body>
-<header>
-    <!-- NAV START -->
-    <!-- <div class="headerImage"> -->
+
+<main>
+  <section class="headerFlex">
+    <div class="headerImage">
+          <!-- NAV START -->
       <nav id="home" class="navBar">
         <div class="navFlex">
           <ul class="navMenu">
@@ -45,14 +47,10 @@
         </div>
       </nav>
       <!-- NAV END -->
-</header>
-
-<main>
-  <section class="headerFlex">
-    <div class="headerImage">
       <div class="h1Flex">
-        <h1>Bea Tuano</h1>
-        <h2>Front-End Web Developer</h2>
+        <h2 class="headerh2">Hi I'm</h2>
+        <h1>Bea</h1>
+        <h2 class="headerh2">Front-End Web Developer</h2>
      </div>
     </div>
   </section>
@@ -75,8 +73,8 @@
             </div>
           </div>
         </section>
-
-        <section>
+      </div>
+        <section class="skills">
           <div class="skillsFlex">
             <h2>Skills</h2>
             <div class="skillsBox">
@@ -212,82 +210,84 @@
             </div>
           </div>
         </section>
+    <div class="projectsBackground">
+      <div class="wrapper">
+        <section class="projects">
+            <div class="projectsFlex">
+              <h2>Projects</h2>
 
-        <section id="projects">
-          <div class="projectsFlex">
-            <h2>Projects</h2>
-
-            <div class="project1Flex">
-              <div class="pokegenerator w-1/2">
-                <img class="projectImages" src="./assets/pokegenerator.gif" />
+              <div class="project1Flex">
+                <div class="pokegenerator w-1/2"><img class="projectImages" src="./assets/fernweh.png" /></div>
+                <div class="w-1/2 projectText projectGradient">
+                  <h3>Fernweh</h3>
+                  <h4>REACT, FIREBASE, HTML, CSS</h4>
+                  <p>
+                    A homage to my time abroad in Germany. Fernweh allows the user upon Google authentication sign in to input countries they would like to visit using Firebase's database.
+                  </p>
+                  <ul>
+                    <li class="button">
+                      <a href="https://fernweh-app.netlify.app/"
+                        >View Live</a
+                      >
+                    </li>
+                    <li class="button">
+                      <a href="https://github.com/beajt/Fernweh"
+                        >View Code</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="w-1/2">
-                <h3>Pokégenerator</h3>
-                <h4>JAVASCRIPT, HTML, CSS</h4>
-                <p>
-                  A Pokémon generator app that randomly generates a Pokémon from
-                  the PokéApi. Made in collaboration with Christian Yuen.
-                </p>
-                <ul>
-                  <li class="button">
-                    <a href="https://pokegenerator-project.netlify.app/"
-                      >View Live</a
-                    >
-                  </li>
-                  <li class="button">
-                    <a href="https://github.com/bea-christian/project-2"
-                      >View Code</a
-                    >
-                  </li>
-                </ul>
+              <div class="project2Flex">
+                <div class="w-1/2 projectGradient projectText">
+                <div><img class="projectImages hideDesktop" src="./assets/vitaminK.png" /></div>
+                  <h3>Vitamin K(itten)</h3>
+                  <h4>REACT, HTML, CSS</h4>
+                  <p>Get your daily dose of Vitamin K!</p>
+                  <ul>
+                    <li class="button">
+                      <a href="https://vitaminkitten.netlify.app/"
+                        >View Live</a
+                      >
+                    </li>
+                    <li class="button">
+                      <a href="https://github.com/beajt/Vitamin-Kitten"
+                        >View Code</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-1/2"><img class="projectImages hideMobile" src="./assets/vitaminK.png" /></div>
+              </div>
+              <div class="project3Flex">
+                <div class="pokegenerator w-1/2">
+                  <img class="projectImages" src="./assets/pokegenerator.png" />
+                </div>
+                <div class="w-1/2 projectText projectGradient">
+                  <h3>Pokégenerator</h3>
+                  <h4>JAVASCRIPT, HTML, CSS</h4>
+                  <p>
+                    A Pokémon generator app that randomly generates a Pokémon from
+                    the PokéApi. Made in collaboration with Christian Yuen.
+                  </p>
+                  <ul>
+                    <li class="button">
+                      <a href="https://pokegenerator-project.netlify.app/"
+                        >View Live</a
+                      >
+                    </li>
+                    <li class="button">
+                      <a href="https://github.com/bea-christian/project-2"
+                        >View Code</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="project2Flex">
-              <div class="w-1/2">
-                <h3>Stage Drumkit</h3>
-                <h4>JAVASCRIPT, HTML, CSS</h4>
-                <p>Become a rock star drummer with just your keyboard! Made with Vanilla JavaScript.</p>
-                <ul>
-                  <li class="button">
-                    <a href="https://pokegenerator-project.netlify.app/"
-                      >View Live</a
-                    >
-                  </li>
-                  <li class="button">
-                    <a href="https://github.com/bea-christian/project-2"
-                      >View Code</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="w-1/2"><img class="projectImages" src="./assets/drumkit.gif" /></div>
-            </div>
-            <div class="project3Flex">
-              <div class="w-1/2"><img class="projectImages" src="./assets/page.gif" /></div>
-              <div class="projectText3">
-                <h3>Blogger Multi-Page Site</h3>
-                <h4>HTML, CSS, SASS</h4>
-                <p>
-                  Convert a design into a multi-page, functional, responsive website.
-                  Translating static design images into functional multi-page website using HTML and CSS techniques while proviinge a good experience for the site's users across multiple devices and screen sizes.
-
-                </p>
-                <ul>
-                  <li class="button">
-                    <a href="https://pokegenerator-project.netlify.app/"
-                      >View Live</a
-                    >
-                  </li>
-                  <li class="button">
-                    <a href="https://github.com/bea-christian/project-2"
-                      >View Code</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
+    </div>
 
         <section id="contact">
           <div class="contact">
@@ -309,16 +309,31 @@
                 </a>
               </li>
             </ul>
+            <form action="#" class="login-form" name="login-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" />
+            <label for="email">Email</label>
+            <input id="email" type="text" />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="60"
+              rows="10"
+            ></textarea>
+            <button type="submit">submit</button>
+          </form>
             <p class="contactText">
-              Any questions, comments, concerns or if you want to talk about
-              cats or future travel plans please feel free to reach out!
+              Thanks for stopping by! Any questions, comments, concerns or if you want to talk about
+              cats or future travel plans please feel free to reach out! I hope you have a wonderful day!
             </p>
           </div>
         </section>
+      </div>
       </main>
-    </div>
     <footer>
-      <p>Developed by Bea</p>
+      <p>Developed with love by Bea ♡</p>
     </footer>
     <script src="./navScript.js"></script>
   </body>

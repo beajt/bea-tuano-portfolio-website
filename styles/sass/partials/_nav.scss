@@ -1,20 +1,23 @@
 nav {
   line-height: 29px;
   letter-spacing: 1px;
-  font-size: 0.75rem;
-  background-color: #f4a09c;
+  font-size: 1rem;
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  width: 100%;
 
   ul {
+    background-color: hsla(0,0%,100%,.6);
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 20px;
   }
 
   li {
-    color: white;
     padding: 0 20px;
 
     a {
@@ -22,8 +25,9 @@ nav {
 
       &:hover,
       &:focus {
-        color: white;
+        color: #f344c7;
         transition: all 0.2s;
+        text-decoration: underline;
       }
     }
   }

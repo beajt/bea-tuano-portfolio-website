@@ -138,11 +138,11 @@
       margin-right: 0;
     }
 
-    img {
-      display: none;
-    }
   }
-
+  
+  .hideMobile {
+    display: none;
+  }
   .project3Flex {
     display: flex;
     flex-direction: column;
