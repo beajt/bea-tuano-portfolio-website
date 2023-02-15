@@ -76,13 +76,14 @@
 }
 
 .projectsBackground {
-  background-image: linear-gradient(to bottom, transparent, #f7f7f7), url("../assets/pawel-czerwinski-OG44d93iNJk-unsplash2.jpg");
+  background-image: linear-gradient(to bottom, transparent, #f7f7f7),
+    url("../assets/pawel-czerwinski-OG44d93iNJk-unsplash2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .projectGradient {
-  background-color: hsla(0,0%,100%,.6);
+  background-color: hsla(0, 0%, 100%, 0.6);
   border-radius: 20px;
 }
 
@@ -105,45 +106,35 @@
   }
 }
 
-.project1Flex {
-  display: flex;
-  margin-bottom: 50px;
-
-}
-
 .projectText {
   padding: 0 30px;
 }
 
-.pokegenerator {
+.projectImages {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+.projectLeft {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.projectLeftImage {
   display: flex;
   align-items: center;
 }
 
-.project2Flex {
+.projectRightImage {
   display: flex;
-  margin-bottom: 50px;
-
-  ul {
-    padding: 0;
-  }
+  align-items: center;
 }
 
-.project3Flex {
+.projectRight {
   display: flex;
   margin-bottom: 50px;
-
-  .projectText3 {
-    margin-left: 50px;
-    padding: 0 30px;
-    ul {
-      padding: 0;
-    }
-  }
-
-  .projectText3 {
-    width: 60%;
-  }
 }
 
 .w-1\/2 {
@@ -154,12 +145,7 @@
   display: none;
 }
 
-.projectImages {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  margin: 0 30px;
-}
+// CONTACT
 
 .contact {
   display: flex;
