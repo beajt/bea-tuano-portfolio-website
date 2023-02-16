@@ -253,6 +253,10 @@ h3 {
   font-size: 1.25rem;
 }
 
+h4 {
+  font-size: 0.75rem;
+}
+
 ul {
   font-weight: 700;
 }
@@ -440,7 +444,7 @@ h1 {
   margin: 120px 0;
 }
 .skillsFlex h2 {
-  margin: 30px auto 0;
+  margin: 40px auto 40px;
 }
 
 .skillsIcons {
@@ -449,15 +453,15 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 6% auto;
+  margin: 6%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
 }
 .skillsIcons li {
-  -ms-flex-preferred-size: 17%;
-      flex-basis: 17%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,6 +489,7 @@ h1 {
 .skillsIcons li p {
   height: 50px;
   text-align: center;
+  font-size: 0.8rem;
 }
 .skillsIcons li svg {
   fill: #212427;
@@ -518,14 +523,21 @@ h1 {
 .projectsFlex h2 {
   padding-bottom: 30px;
 }
+.projectsFlex h3 {
+  margin-bottom: 0;
+}
 .projectsFlex ul {
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  margin: 5px;
 }
 .projectsFlex li {
   margin-bottom: 10px;
+}
+.projectsFlex p {
+  margin-top: 5px;
 }
 
 .projectText {
@@ -537,6 +549,17 @@ h1 {
   height: 100%;
   border-radius: 20px;
   margin: 0 20px;
+}
+
+.projectIcon svg {
+  fill: #212427;
+  width: 1.75rem;
+  margin-right: 5px;
+}
+.projectIcon li:hover svg {
+  fill: #f974c4;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .projectLeft {
@@ -575,7 +598,11 @@ h1 {
   width: 50%;
 }
 
-.hideDesktop {
+.madeWith {
+  margin: 0;
+}
+
+.hideMobile {
   display: none;
 }
 
@@ -633,7 +660,7 @@ footer p {
   margin-top: 150px;
 }
 
-.login-form {
+.loginForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,10 +761,20 @@ footer {
   }
   .h1Flex {
     padding-left: 0;
-    text-align: center;
+    text-align: left;
+  }
+  .h1Flex h1 {
+    font-size: 7rem;
+  }
+  .h1Flex h2 {
+    font-size: 2rem;
   }
   .aboutFlex {
     padding: 0;
+    margin: 0;
+  }
+  .aboutFlex p {
+    padding-left: 0;
   }
   .aboutText {
     -webkit-box-orient: vertical;
@@ -746,19 +783,10 @@ footer {
             flex-direction: column;
   }
   .skillsIcons li {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
-  .project1Flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .project1Flex .projectText1 {
+  .projectText {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -773,7 +801,26 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .project1Flex .pokegenerator {
+  .projectRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  .projectLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectLeft .pokegenerator {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -784,35 +831,6 @@ footer {
   }
   .w-1\/2 {
     width: 100%;
-  }
-  .project2Flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .project2Flex .projectText2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    margin-right: 0;
-  }
-  .hideMobile {
-    display: none;
   }
   .project3Flex {
     display: -webkit-box;
@@ -840,11 +858,11 @@ footer {
     width: 100%;
     margin-left: 0;
   }
-  .project3Flex img {
+  .project3Flex .projectImages {
     width: 70%;
   }
   .loginForm,
   text-area {
-    width: 80%;
+    width: 70%;
   }
 }
