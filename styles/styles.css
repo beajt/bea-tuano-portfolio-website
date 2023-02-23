@@ -266,10 +266,6 @@ li {
   list-style: none;
 }
 
-p {
-  text-align: justify;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -294,6 +290,7 @@ a {
   -webkit-box-shadow: inset 0 0 0 2px var(--colour-white);
           box-shadow: inset 0 0 0 2px var(--colour-white);
   margin-right: 1em;
+  border-radius: 5px;
 }
 
 .button:hover {
@@ -454,15 +451,15 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 6%;
+  margin-bottom: 5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
 }
 .skillsIcons li {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,7 +519,7 @@ h1 {
           align-items: center;
 }
 .projectsFlex h2 {
-  padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 .projectsFlex h3 {
   margin-bottom: 0;
@@ -549,7 +546,7 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .projectIcon svg {
@@ -603,62 +600,39 @@ h1 {
   margin: 0 0 5px 0;
 }
 
-.hideMobile {
-  display: none;
+input, textarea {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px;
+  margin: 10px;
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 100px;
+  padding-bottom: 70px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f9d9ed));
+  background-image: linear-gradient(to bottom, transparent, #f9d9ed);
 }
-.contact .contactIcons {
+
+.contactFlex1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+.contactWidth {
+  width: 50%;
+}
+
+.contactIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0;
 }
-.contact .contactIcons a {
+.contactIcons a {
   padding: 5px;
-}
-.contact i {
-  color: black;
-}
-.contact i:hover {
-  color: #f974c4;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.contact .contactText {
-  text-align: center;
-  padding: 0 40px;
-}
-
-footer p {
-  text-align: center;
-}
-
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 150px;
 }
 
 .loginForm {
@@ -669,7 +643,26 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+i {
+  color: black;
+}
+
+i:hover {
+  color: #f974c4;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.contactText {
+  margin-right: 40px;
 }
 
 /* FOOTER STYLES */
@@ -679,8 +672,37 @@ footer {
   padding: 1px;
   bottom: 0;
   width: 100%;
+  border-top: solid;
+}
+footer p {
+  text-align: center;
 }
 
+@media (min-width: 769px) {
+  .hideMobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hideDesktop {
+    display: none;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .w-1\/2 {
+    width: 100%;
+  }
+  .projectLeft, .projectRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media (max-width: 450px) {
   .wrapper {
     width: 95%;
@@ -761,8 +783,8 @@ footer {
     padding: 0rem 0.25rem;
   }
   .h1Flex {
-    padding-left: 0;
-    text-align: left;
+    margin-left: 0;
+    text-align: center;
   }
   .h1Flex h1 {
     font-size: 7rem;
@@ -774,9 +796,6 @@ footer {
     padding: 0;
     margin: 0;
   }
-  .aboutFlex p {
-    padding-left: 0;
-  }
   .aboutText {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -786,6 +805,9 @@ footer {
   .skillsIcons li {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
+  }
+  .hideMobile {
+    display: none;
   }
   .projectText {
     display: -webkit-box;
@@ -862,8 +884,28 @@ footer {
   .project3Flex .projectImages {
     width: 70%;
   }
-  .loginForm,
-  text-area {
-    width: 70%;
+  .contactFlex1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactFlex1 .contactWidth {
+    width: 100%;
+    text-align: center;
+  }
+  .contactFlex1 .contactIcons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactFlex1 .contactText {
+    margin: 0;
   }
 }

@@ -1,0 +1,50 @@
+input, textarea {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px;
+  margin: 10px;
+}
+
+.contact {
+  margin-top: 100px;
+  padding-bottom: 70px;
+  background-image: linear-gradient(to bottom, transparent, #f9d9ed);
+}
+
+.contactFlex1 {
+  display: flex;
+}
+
+.contactWidth {
+  width: 50%;
+}
+
+.contactIcons {
+  display: flex;
+  padding: 0;
+
+  a {
+    padding: 5px;
+  }
+}
+
+.loginForm {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+i {
+  color: black;
+}
+
+i:hover {
+  color: #f974c4;
+  transition: all 0.2s;
+}
+
+.contactText {
+  margin-right: 40px;
+}
