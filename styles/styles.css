@@ -237,14 +237,13 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   color: #212427;
   background-color: #f7f7f7;
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -285,6 +284,7 @@ a:hover, a:focus {
 }
 
 .button {
+  font-family: "Quicksand", sans-serif;
   padding: 0.9rem 1.7rem;
   color: var(--button-colour);
   font-weight: 500;
@@ -344,7 +344,7 @@ nav li {
 }
 
 h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-size: 8rem;
   color: #f974c4;
@@ -358,8 +358,9 @@ h1 {
 }
 .headerFlex h2 {
   font-size: 2.5rem;
+  color: #9c82e2;
   margin: 0;
-  color: #2A3033;
+  margin-bottom: 10px;
 }
 
 .headerImage {
@@ -383,7 +384,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 100px;
+  text-align: center;
 }
 
 .aboutFlex {
@@ -594,7 +595,7 @@ h1 {
 }
 
 input, textarea {
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
   width: 100%;
   border-radius: 5px;
   border: solid 1px;
@@ -706,9 +707,6 @@ footer p {
   }
 }
 @media (max-width: 700px) {
-  .h1Flex {
-    margin-left: 40px;
-  }
   .aboutText {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -747,6 +745,12 @@ footer p {
 @media (max-width: 450px) {
   .wrapper {
     width: 95%;
+  }
+  .h1Flex h1 {
+    font-size: 6.5rem;
+  }
+  .h1Flex h2 {
+    font-size: 1.75rem;
   }
   .hideDesktop {
     display: none;
@@ -837,6 +841,9 @@ footer p {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
+  .aboutText p {
+    padding-left: 0;
+  }
   .projectText {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -851,6 +858,9 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .projectImages {
+    margin: 0;
   }
   .projectLeft {
     -webkit-box-orient: vertical;
