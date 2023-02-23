@@ -42,7 +42,15 @@ li {
 a {
   text-decoration: none;
   color: black;
+  &:hover,
+  &:focus {
+    color: #f344c7;
+    transition: all 0.2s;
+    text-decoration: underline;
+  }
 }
+
+
 
 .button {
   --button: #f9d9ed;

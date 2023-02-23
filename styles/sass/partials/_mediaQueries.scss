@@ -1,26 +1,30 @@
 @media (max-width: 940px) {
 
-
 }
 
-@media (min-width: 769px) {
+
+@media (min-width: 811px) {
+  .hideDesktop {
+    display: none;
+  }
+}
+
+@media (max-width: 810px ) and (min-width: 450px)  {
   .hideMobile {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px ) {
 
-  .hideDesktop {
-    display: none;
-  }
-
-  h1 {
-    font-size: 7rem;
-  }
-
-  h2 {
-    font-size: 2rem;
+  .h1Flex {
+    h1 {
+      font-size: 7rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
   }
 
   .w-1\/2 {
@@ -30,6 +34,47 @@
   .projectLeft, .projectRight {
     flex-direction: column;
   }
+
+  .projectImages {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (max-width: 700px ){
+
+  .h1Flex {
+    margin-left: 40px;
+  }
+
+  .aboutText {
+    flex-direction: column;
+  }
+
+  .aboutFlex {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contactFlex1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  .contactWidth {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactIcons {
+    justify-content: center;
+  }
+
+  .contactText {
+    margin: 0;
+  }
+}
+
 }
 
 @media (max-width: 450px) {
@@ -37,6 +82,19 @@
     width: 95%;
   }
 
+  .hideDesktop {
+    display: none;
+  }
+
+  .h1Flex {
+    text-align: center;
+    margin: 0;
+  }
+
+  .button {
+    text-align: center;
+  }
+  
   //Hamburger menu from project 1, from Haley
 
   .navBar {
@@ -107,32 +165,6 @@
     padding: 0rem 0.25rem;
   }
 
-  // HEADER
-
-  .h1Flex {
-    margin-left: 0;
-    text-align: center;
-
-    h1 {
-      font-size: 7rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-  }
-
-  // ABOUT
-
-  .aboutFlex {
-    padding: 0;
-    margin: 0;
-  }
-
-  .aboutText {
-    flex-direction: column;
-  }
-
   // SKILLS
 
   .skillsIcons li {
@@ -141,76 +173,26 @@
 
   // PROJECTS
 
-  .hideMobile {
-    display: none;
-  }
-
   .projectText {
-    // padding: 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
+  .projectLeft {
+    flex-direction: column;
+  }
+
   .projectRight {
-    display: flex;
     flex-direction: column-reverse;
     margin-bottom: 50px;
-  }
-  .projectLeft {
-    display: flex;
-    flex-direction: column;
-
-    .pokegenerator {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
   }
 
   .w-1\/2 {
     width: 100%;
   }
 
-  .project3Flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .projectText3 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      margin-left: 0;
-    }
-
-    .projectImages {
-      width: 70%;
-    }
-  }
-
   // CONTACT MEDIA QUERIES
-
-  .contactFlex1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  .contactWidth {
-    width: 100%;
-    text-align: center;
-  }
-
-  .contactIcons {
-    justify-content: center;
-  }
-
-  .contactText {
-    margin: 0;
-  }
-
-}
 
 }

@@ -19,16 +19,5 @@ nav {
 
   li {
     padding: 0 20px;
-
-    a {
-      color: black;
-
-      &:hover,
-      &:focus {
-        color: #f344c7;
-        transition: all 0.2s;
-        text-decoration: underline;
-      }
-    }
   }
 }

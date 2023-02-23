@@ -270,6 +270,12 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover, a:focus {
+  color: #f344c7;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-decoration: underline;
+}
 
 .button {
   --button: #f9d9ed;
@@ -335,15 +341,6 @@ nav ul {
 }
 nav li {
   padding: 0 20px;
-}
-nav li a {
-  color: black;
-}
-nav li a:hover, nav li a:focus {
-  color: #f344c7;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  text-decoration: underline;
 }
 
 h1 {
@@ -596,10 +593,6 @@ h1 {
   width: 50%;
 }
 
-.madeWith {
-  margin: 0 0 5px 0;
-}
-
 input, textarea {
   font-family: "Raleway", sans-serif;
   width: 100%;
@@ -665,6 +658,10 @@ i:hover {
   margin-right: 40px;
 }
 
+.email {
+  font-weight: 500;
+}
+
 /* FOOTER STYLES */
 footer {
   background-color: #f9d9ed;
@@ -678,19 +675,21 @@ footer p {
   text-align: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 811px) {
+  .hideDesktop {
+    display: none;
+  }
+}
+@media (max-width: 810px) and (min-width: 450px) {
   .hideMobile {
     display: none;
   }
 }
-@media (max-width: 768px) {
-  .hideDesktop {
-    display: none;
-  }
-  h1 {
+@media (max-width: 810px) {
+  .h1Flex h1 {
     font-size: 7rem;
   }
-  h2 {
+  .h1Flex h2 {
     font-size: 2rem;
   }
   .w-1\/2 {
@@ -702,10 +701,62 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .projectImages {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .h1Flex {
+    margin-left: 40px;
+  }
+  .aboutText {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutFlex {
+    padding: 0;
+    margin: 0;
+  }
+  .contactFlex1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactFlex1 .contactWidth {
+    width: 100%;
+    text-align: center;
+  }
+  .contactFlex1 .contactIcons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactFlex1 .contactText {
+    margin: 0;
+  }
 }
 @media (max-width: 450px) {
   .wrapper {
     width: 95%;
+  }
+  .hideDesktop {
+    display: none;
+  }
+  .h1Flex {
+    text-align: center;
+    margin: 0;
+  }
+  .button {
+    text-align: center;
   }
   .navBar {
     min-height: 70px;
@@ -782,32 +833,9 @@ footer p {
   nav li {
     padding: 0rem 0.25rem;
   }
-  .h1Flex {
-    margin-left: 0;
-    text-align: center;
-  }
-  .h1Flex h1 {
-    font-size: 7rem;
-  }
-  .h1Flex h2 {
-    font-size: 2rem;
-  }
-  .aboutFlex {
-    padding: 0;
-    margin: 0;
-  }
-  .aboutText {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .skillsIcons li {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
-  }
-  .hideMobile {
-    display: none;
   }
   .projectText {
     display: -webkit-box;
@@ -824,88 +852,20 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .projectLeft {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .projectRight {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-bottom: 50px;
   }
-  .projectLeft {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .projectLeft .pokegenerator {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
   .w-1\/2 {
     width: 100%;
-  }
-  .project3Flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .project3Flex .projectText3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    margin-left: 0;
-  }
-  .project3Flex .projectImages {
-    width: 70%;
-  }
-  .contactFlex1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .contactFlex1 .contactWidth {
-    width: 100%;
-    text-align: center;
-  }
-  .contactFlex1 .contactIcons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contactFlex1 .contactText {
-    margin: 0;
   }
 }
