@@ -2,7 +2,6 @@
 
 }
 
-
 @media (min-width: 811px) {
   .hideDesktop {
     display: none;
@@ -43,13 +42,13 @@
 
 @media (max-width: 700px ){
 
-  .aboutText {
-    flex-direction: column;
-  }
-
   .aboutFlex {
     padding: 0;
     margin: 0;
+
+    .aboutText {
+    flex-direction: column;
+    }
   }
 
   .contactFlex1 {
@@ -100,8 +99,6 @@
   .button {
     text-align: center;
   }
-  
-  //Hamburger menu from project 1, from Haley
 
   .navBar {
     min-height: 70px;
@@ -109,10 +106,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    position: fixed;
   }
   .navFlex {
     display: flex;
     justify-content: right;
+    position: fixed;
   }
 
   .navMenu {
@@ -121,7 +120,7 @@
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: white;
+    background-color: hsla(0,0%,100%,.8);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -131,12 +130,12 @@
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px);
+    transform: translateY(11px);
     rotate: (45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px);
+    transform: translateY(-11px);
     rotate: (-45deg);
   }
 
@@ -147,6 +146,10 @@
 
   .navItem {
     margin: 16px 0;
+  }
+
+  .navBar.active {
+    background-color: hsla(0,0%,100%,.8);
   }
 
   .navMenu.active {
@@ -164,11 +167,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
-  }
-
-  nav li {
-    padding: 0rem 0.25rem;
+    background-color: #212427;
   }
 
   // SKILLS
@@ -179,11 +178,17 @@
 
   // PROJECTS
 
-  .aboutText {
+    .aboutFlex {
+    padding: 0;
+    margin: 10px;
 
-    p {
-      padding-left: 0;
-    }
+    .aboutText {
+    flex-direction: column;
+
+      p {
+        padding: 0;
+      }
+   }
   }
 
   .projectText {
@@ -208,5 +213,9 @@
 
   .w-1\/2 {
     width: 100%;
+  }
+
+  input, textarea {
+    margin: 5px auto;
   }
 }

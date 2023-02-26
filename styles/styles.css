@@ -324,7 +324,7 @@ nav {
   width: 100%;
 }
 nav ul {
-  background-color: hsla(0deg, 0%, 100%, 0.6);
+  background-color: hsla(0, 0%, 100%, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,6 +342,9 @@ nav ul {
 nav li {
   padding: 0 20px;
 }
+nav .menu {
+  display: none;
+}
 
 h1 {
   font-family: "Quicksand", sans-serif;
@@ -358,7 +361,7 @@ h1 {
 }
 .headerFlex h2 {
   font-size: 2.5rem;
-  color: #9c82e2;
+  color: #212427;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -416,17 +419,12 @@ h1 {
   padding-left: 30px;
 }
 .aboutFlex .aboutText img {
-  width: 12rem;
+  width: 13rem;
   border-radius: 20px;
 }
 
 .winterpeg {
   text-decoration: line-through;
-}
-
-.skills {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f9d9ed));
-  background-image: linear-gradient(to bottom, transparent, #f9d9ed);
 }
 
 .skillsFlex {
@@ -437,10 +435,29 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 120px 0;
+  position: relative;
 }
 .skillsFlex h2 {
   margin: 40px auto 40px;
+}
+
+.skillHeight1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f9d9ed));
+  background-image: linear-gradient(to bottom, transparent, #f9d9ed);
+  position: absolute;
+  z-index: -1;
+  height: 50%;
+  width: 100%;
+}
+
+.skillHeight2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#f9d9ed));
+  background-image: linear-gradient(to top, transparent, #f9d9ed);
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
 }
 
 .skillsIcons {
@@ -497,10 +514,11 @@ h1 {
   background-image: linear-gradient(to bottom, transparent, #f7f7f7), url("../assets/pawel-czerwinski-OG44d93iNJk-unsplash2.jpg");
   background-size: cover;
   background-position: center;
+  padding: 150px 0;
 }
 
 .projectGradient {
-  background-color: hsla(0deg, 0%, 100%, 0.6);
+  background-color: hsla(0, 0%, 100%, 0.6);
   border-radius: 20px;
 }
 
@@ -603,7 +621,6 @@ input, textarea {
 }
 
 .contact {
-  margin-top: 100px;
   padding-bottom: 70px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f9d9ed));
   background-image: linear-gradient(to bottom, transparent, #f9d9ed);
@@ -629,7 +646,7 @@ input, textarea {
   padding: 5px;
 }
 
-.loginForm {
+.contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,7 +687,7 @@ footer {
   padding: 1px;
   bottom: 0;
   width: 100%;
-  border-top: solid;
+  border-top: 1px solid darkgray;
 }
 footer p {
   text-align: center;
@@ -707,15 +724,15 @@ footer p {
   }
 }
 @media (max-width: 700px) {
-  .aboutText {
+  .aboutFlex {
+    padding: 0;
+    margin: 0;
+  }
+  .aboutFlex .aboutText {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .aboutFlex {
-    padding: 0;
-    margin: 0;
   }
   .contactFlex1 {
     display: -webkit-box;
@@ -774,6 +791,7 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
     padding: 0 24px;
+    position: fixed;
   }
   .navFlex {
     display: -webkit-box;
@@ -782,6 +800,7 @@ footer p {
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
+    position: fixed;
   }
   .navMenu {
     position: fixed;
@@ -792,7 +811,7 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: white;
+    background-color: hsla(0, 0%, 100%, 0.8);
     width: 100%;
     text-align: center;
     -webkit-transition: 0.3s;
@@ -802,13 +821,13 @@ footer p {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
     rotate: 45deg;
   }
   .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-11px);
+            transform: translateY(-11px);
     rotate: -45deg;
   }
   .hamburger {
@@ -817,6 +836,9 @@ footer p {
   }
   .navItem {
     margin: 16px 0;
+  }
+  .navBar.active {
+    background-color: hsla(0, 0%, 100%, 0.8);
   }
   .navMenu.active {
     left: 0;
@@ -832,17 +854,24 @@ footer p {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
-  }
-  nav li {
-    padding: 0rem 0.25rem;
+    background-color: #212427;
   }
   .skillsIcons li {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
-  .aboutText p {
-    padding-left: 0;
+  .aboutFlex {
+    padding: 0;
+    margin: 10px;
+  }
+  .aboutFlex .aboutText {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutFlex .aboutText p {
+    padding: 0;
   }
   .projectText {
     display: -webkit-box;
@@ -877,5 +906,8 @@ footer p {
   }
   .w-1\/2 {
     width: 100%;
+  }
+  input, textarea {
+    margin: 5px auto;
   }
 }
