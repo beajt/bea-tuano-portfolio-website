@@ -342,9 +342,6 @@ nav ul {
 nav li {
   padding: 0 20px;
 }
-nav .menu {
-  display: none;
-}
 
 h1 {
   font-family: "Quicksand", sans-serif;
@@ -558,6 +555,10 @@ h1 {
   padding: 0 30px;
 }
 
+.galass {
+  margin-bottom: 60px;
+}
+
 .projectImages {
   width: 100%;
   height: 100%;
@@ -619,6 +620,7 @@ input, textarea {
   border-radius: 5px;
   border: solid 1px;
   margin: 10px;
+  background-color: hsla(0, 0%, 100%, 0.6);
 }
 
 textarea {
