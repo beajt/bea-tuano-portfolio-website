@@ -1,4 +1,5 @@
-input, textarea {
+input,
+textarea {
   font-family: "Quicksand", sans-serif;
   width: 100%;
   border-radius: 5px;
@@ -34,10 +35,10 @@ textarea {
 }
 
 .contactForm {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 i {
@@ -51,8 +52,23 @@ i:hover {
 
 .contactText {
   margin-right: 40px;
+
+  .email {
+    font-weight: 500;
+  }
 }
 
-.email {
-  font-weight: 500;
+a {
+text-decoration: none;
+color: #212427;
+&:hover,
+&:focus {
+  color: #f344c7;
+  transition: all 0.2s;
+  text-decoration: underline;
+}
+}
+
+.submit {
+  cursor: pointer;
 }

@@ -41,13 +41,16 @@
 
 @media (max-width: 700px ){
 
-  .aboutFlex {
-    padding: 0;
-    margin: 0;
-
+  .aboutFlex{
     .aboutText {
-    flex-direction: column;
-    }
+      flex-direction: column;
+      text-align: center;
+  
+      p {
+        padding-left: 0;
+      }
+      }
+  }
   }
 
   .contactFlex1 {
@@ -67,8 +70,6 @@
   .contactText {
     margin: 0;
   }
-}
-
 }
 
 @media (max-width: 450px) {
@@ -169,13 +170,9 @@
     background-color: #212427;
   }
 
-  // SKILLS
-
   .skillsIcons li {
     flex-basis: 30%;
   }
-
-  // PROJECTS
 
     .aboutFlex {
     padding: 0;

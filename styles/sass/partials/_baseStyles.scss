@@ -37,12 +37,12 @@ li {
   list-style: none;
 }
 
-a {
+.button a {
   text-decoration: none;
-  color: black;
+  color: #212427;
   &:hover,
   &:focus {
-    color: #f344c7;
+    color: #212427;
     transition: all 0.2s;
     text-decoration: underline;
   }
