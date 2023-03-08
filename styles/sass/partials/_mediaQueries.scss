@@ -51,24 +51,24 @@
       }
       }
   }
-  }
 
   .contactFlex1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-  .contactWidth {
-    width: 100%;
-    text-align: center;
-  }
+    .contactWidth {
+      width: 100%;
+      text-align: center;
+    }
 
-  .contactIcons {
-    justify-content: center;
-  }
+    .contactIcons {
+      justify-content: center;
+    }
 
-  .contactText {
-    margin: 0;
+    .contactText {
+      margin: 0;
+    }
   }
 }
 
