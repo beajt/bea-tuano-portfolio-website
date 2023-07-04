@@ -480,8 +480,8 @@ h1 {
   padding: 0;
 }
 .skillsIcons li {
-  -ms-flex-preferred-size: 17%;
-      flex-basis: 17%;
+  -ms-flex-preferred-size: 14%;
+      flex-basis: 14%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
