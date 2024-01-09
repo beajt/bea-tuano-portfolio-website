@@ -1,0 +1,33 @@
+nav {
+  line-height: 29px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+
+  ul {
+    background-color: hsla(0,0%,100%,.6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  li {
+    padding: 0 20px;
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover,
+      &:focus {
+        color: #f344c7;
+        transition: all 0.2s;
+        text-decoration: underline;
+      }
+    }
+  }
+}

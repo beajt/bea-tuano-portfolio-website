@@ -1,0 +1,86 @@
+html {
+  font-size: 125%;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: #212427;
+  background-color: #f7f7f7;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+ul {
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+.button a {
+  text-decoration: none;
+  color: #212427;
+  &:hover,
+  &:focus {
+    color: #212427;
+    transition: all 0.2s;
+    text-decoration: underline;
+  }
+}
+
+.button {
+  --button: #f9d9ed;
+  --button-hover: #f974c4;
+  --button-colour: var(--colour-black);
+  --button-border: var(--colour-black);
+}
+
+.button {
+  font-family:'Quicksand', sans-serif;
+  padding: 0.9rem 1.7rem;
+  color: var(--button-colour);
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  background: var(--button);
+  border: solid 1px;
+  box-shadow: inset 0 0 0 2px var(--colour-white);
+  margin-right: 1em;
+  border-radius: 5px;
+}
+
+.button:hover {
+  text-decoration: underline;
+  background: var(--button-hover);
+  box-shadow: inset 0 0 0 4px var(--colour-white);
+}
+
+.button:active {
+  background: var(--button-active);
+}
+
+.button:visited {
+  background: var(--button-visited);
+}
+
+// Button credit to Cathy Dutton's codepe

@@ -1,0 +1,74 @@
+input,
+textarea {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px;
+  margin: 10px;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+textarea {
+  resize: none;
+}
+
+.contact {
+  padding-bottom: 70px;
+  background-image: linear-gradient(to bottom, transparent, #f9d9ed);
+}
+
+.contactFlex1 {
+  display: flex;
+}
+
+.contactWidth {
+  width: 50%;
+}
+
+.contactIcons {
+  display: flex;
+  padding: 0;
+
+  a {
+    padding: 5px;
+  }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  color: black;
+}
+
+i:hover {
+  color: #f974c4;
+  transition: all 0.2s;
+}
+
+.contactText {
+  margin-right: 40px;
+
+  .email {
+    font-weight: 500;
+  }
+}
+
+a {
+text-decoration: none;
+color: #212427;
+&:hover,
+&:focus {
+  color: #f344c7;
+  transition: all 0.2s;
+  text-decoration: underline;
+}
+}
+
+.submit {
+  cursor: pointer;
+}
